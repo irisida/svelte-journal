@@ -10,7 +10,7 @@
 
   function added(event) {
     if (event && event.detail && event.detail.objectId) {
-      push('/view' + event.detail.objectId);
+      push('/view/' + event.detail.objectId);
     }
   }
 </script>

@@ -3,8 +3,6 @@
   import Navbar from './components/Navbar.svelte';
   import Router from 'svelte-spa-router';
   import routes from './routes';
-  // Stores
-  import { view } from './stores.js';
 </script>
 
 <Navbar />
