@@ -3,13 +3,14 @@
   import Renderer from './Renderer.svelte';
   import { fade } from 'svelte/transition';
   import { view } from '../stores.js';
+  import { push } from 'svelte-spa-router';
 
   let content = '';
   let title = '';
 
   function added(event) {
     if (event && event.detail && event.detail.objectId) {
-      $view = 'view/' + event.detail.objectId;
+      push('/view' + event.detail.objectId);
     }
   }
 </script>
